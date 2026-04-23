@@ -1,0 +1,88 @@
+site_name: Multithreading & Concurrency
+site_description: Comprehensive learning path to master Java multithreading, concurrency, and virtual threads
+site_author: Nitin K C
+
+theme:
+  name: mkdocs
+  color_mode: auto
+  user_color_mode_toggle: true
+  highlightjs: true
+  hljs_languages:
+    - java
+    - yaml
+    - python
+    - javascript
+    - bash
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+  - abbr
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
+  - https://unpkg.com/mermaid@10/dist/mermaid.js
+  - js/mermaid-init.js
+  - js/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - js/theme-toggle.js
+
+extra_css:
+  - https://unpkg.com/mermaid@10/dist/mermaid.css
+  - css/myCss.css
+
+nav:
+  - Home: index.md
+  - Foundations:
+    - 01 · Concurrency vs Parallelism & Process vs Thread: theory/01-foundations-concurrency.md
+    - 02 · Memory Model & Memory Visibility: theory/02-memory-model.md
+    - 03 · I/O Types & Preemption: theory/03-io-and-preemption.md
+  - Thread Fundamentals:
+    - 04 · Thread Creation & Lifecycle: theory/04-thread-creation.md
+    - 05 · Thread Control & Coordination: theory/05-thread-control.md
+    - 06 · Thread Priority, Daemon & Groups: theory/06-thread-priority.md
+  - Synchronization & Safety:
+    - 07 · Race Conditions & Critical Sections: theory/07-race-conditions.md
+    - 08 · Synchronization Mechanisms (synchronized, volatile, atomic): theory/08-synchronization.md
+    - 09 · Locks & Advanced Sync (Reentrant, ReadWrite, Semaphore): theory/09-locks.md
+  - Concurrent Utilities:
+    - 10 · Executor Framework & Thread Pools: theory/10-executor-framework.md
+    - 11 · CompletableFuture & Async Pipelines: theory/11-completable-future.md
+    - 12 · Concurrent Collections & BlockingQueues: theory/12-concurrent-collections.md
+  - Advanced Topics:
+    - 13 · Virtual Threads (Project Loom): theory/13-virtual-threads.md
+    - 14 · Structured Concurrency & Scoped Values: theory/14-structured-concurrency.md
+    - 15 · Best Practices & Patterns: theory/15-best-practices.md
+  - Labs:
+    - Labs Overview: labs/00-labs-overview.md
+    - Lab 1 · Thread Creation & Lifecycle: labs/01-thread-creation-lab.md
+    - Lab 2 · Synchronization Basics: labs/02-synchronization-lab.md
+    - Lab 3 · Locks & Deadlock Prevention: labs/03-locks-lab.md
+    - Lab 4 · Executor Framework: labs/04-executor-lab.md
+    - Lab 5 · CompletableFuture: labs/05-completable-future-lab.md
+    - Lab 6 · Concurrent Collections: labs/06-concurrent-collections-lab.md
+    - Lab 7 · Virtual Threads Basics: labs/07-virtual-threads-lab.md
+    - Lab 8 · Structured Concurrency: labs/08-structured-concurrency-lab.md
+    - Lab 9 · Real-World Scenarios: labs/09-real-world-lab.md
+  - Interview Prep:
+    - Interview Q&A: interview-prep.md
+    - Self-Assessment: interview-questions.md
+  - Future Additions:
+    - Go Concurrency (Roadmap): future/go-concurrency-roadmap.md
