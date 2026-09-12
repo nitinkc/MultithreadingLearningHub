@@ -175,10 +175,7 @@ graph LR
     CPU -->|Allocate| H
     CPU -->|Allocate| M
     CPU -->|Allocate| L
-    
-    style H fill:#fff3e0
-    style M fill:#e3f2fd
-    style L fill:#f5f5f5
+
 ```
 
 ### Setting Priority
@@ -275,7 +272,7 @@ for (int i = 0; i < 10; i++) {
 
 For more details and examples, read:
 
-- **[Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/theory-and-fundamentals/)** — Thread priority and daemon threads
+- **[Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/01-theory-and-fundamentals/)** — Thread priority and daemon threads
 
 ---
 

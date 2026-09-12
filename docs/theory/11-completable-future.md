@@ -184,7 +184,7 @@ class DataFetcher {
 
 For more details and examples, read:
 
-- **[CompletableFuture Mastery](https://nitinkc.github.io/java/multithreading/concurrency/completable-future-mastery/)** — Async composition and chaining
+- **[CompletableFuture Mastery](https://nitinkc.github.io/java/multithreading/concurrency/08-completable-future-mastery/)** — Async composition and chaining
 
 ---
 

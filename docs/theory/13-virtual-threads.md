@@ -70,9 +70,7 @@ graph LR
         C1 -->|Unmount<br/>Mount| V2
         C1 -->|Mount| V3
     end
-    
-    style Platform fill:#fff3e0
-    style Virtual fill:#e3f2fd
+
 ```
 
 ---
@@ -310,7 +308,7 @@ jcmd <pid> Thread.dump
 
 For more details and examples, read:
 
-- **[Virtual Threads](https://nitinkc.github.io/java/multithreading/concurrency/virtual-threads/)** — Project Loom and the future of concurrency
+- **[Virtual Threads](https://nitinkc.github.io/java/multithreading/concurrency/10-virtual-threads/)** — Project Loom and the future of concurrency
 
 ---
 

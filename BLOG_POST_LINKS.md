@@ -17,21 +17,21 @@ Each theory module links to its corresponding blog post for deeper exploration:
 
 | Theory Section | Blog Post | Focus |
 |:---------------|:----------|:------|
-| **01 · Concurrency vs Parallelism** | [Series Overview](https://nitinkc.github.io/java/multithreading/concurrency/series-overview/) + [Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/theory-and-fundamentals/) | Foundations |
-| **02 · Memory Model** | [Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/theory-and-fundamentals/) | Memory visibility, happens-before |
-| **03 · I/O & Preemption** | [Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/theory-and-fundamentals/) | I/O types, context switching |
-| **04 · Thread Creation** | [Thread Creation Methods](https://nitinkc.github.io/java/multithreading/concurrency/thread-creation-methods/) | Runnable vs Callable, lifecycle |
-| **05 · Thread Control** | [Thread Control & Coordination](https://nitinkc.github.io/java/multithreading/concurrency/thread-control-coordination/) | sleep, yield, join, interrupt |
-| **06 · Thread Priority** | [Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/theory-and-fundamentals/) | Priorities, daemon threads |
-| **07 · Race Conditions** | [Race Conditions & Critical Sections](https://nitinkc.github.io/java/multithreading/concurrency/race-conditions-critical-sections/) | Shared state, data races |
-| **08 · Synchronization** | [Synchronization Mechanisms](https://nitinkc.github.io/java/multithreading/concurrency/synchronization-mechanisms/) | synchronized, volatile, Atomic |
-| **09 · Locks** | [Locks & Advanced Sync](https://nitinkc.github.io/java/multithreading/concurrency/locks-and-advanced-sync/) | ReentrantLock, deadlock prevention |
-| **10 · Executor Framework** | [Executor Framework](https://nitinkc.github.io/java/multithreading/concurrency/executor-framework/) | Thread pools, ExecutorService |
-| **11 · CompletableFuture** | [CompletableFuture Mastery](https://nitinkc.github.io/java/multithreading/concurrency/completable-future-mastery/) | Async composition, chaining |
-| **12 · Concurrent Collections** | [Concurrent Collections](https://nitinkc.github.io/java/multithreading/concurrency/concurrent-collections/) | ConcurrentHashMap, BlockingQueue |
-| **13 · Virtual Threads** | [Virtual Threads](https://nitinkc.github.io/java/multithreading/concurrency/virtual-threads/) | Project Loom, carrier threads |
-| **14 · Structured Concurrency** | [Structured Concurrency & Scoped Values](https://nitinkc.github.io/java/multithreading/concurrency/structured-concurrency-scoped-values/) | StructuredTaskScope, Joiners |
-| **15 · Best Practices** | [Best Practices & Patterns](https://nitinkc.github.io/java/multithreading/concurrency/best-practices-patterns/) | Patterns, anti-patterns, testing |
+| **01 · Concurrency vs Parallelism** | [Series Overview](https://nitinkc.github.io/java/multithreading/concurrency/series-overview/) + [Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/01-theory-and-fundamentals/) | Foundations |
+| **02 · Memory Model** | [Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/01-theory-and-fundamentals/) | Memory visibility, happens-before |
+| **03 · I/O & Preemption** | [Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/01-theory-and-fundamentals/) | I/O types, context switching |
+| **04 · Thread Creation** | [Thread Creation Methods](https://nitinkc.github.io/java/multithreading/concurrency/02-thread-creation-methods/) | Runnable vs Callable, lifecycle |
+| **05 · Thread Control** | [Thread Control & Coordination](https://nitinkc.github.io/java/multithreading/concurrency/03-thread-control-coordination/) | sleep, yield, join, interrupt |
+| **06 · Thread Priority** | [Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/01-theory-and-fundamentals/) | Priorities, daemon threads |
+| **07 · Race Conditions** | [Race Conditions & Critical Sections](https://nitinkc.github.io/java/multithreading/concurrency/04-race-conditions-critical-sections/) | Shared state, data races |
+| **08 · Synchronization** | [Synchronization Mechanisms](https://nitinkc.github.io/java/multithreading/concurrency/05-synchronization-mechanisms/) | synchronized, volatile, Atomic |
+| **09 · Locks** | [Locks & Advanced Sync](https://nitinkc.github.io/java/multithreading/concurrency/06-locks-and-advanced-sync/) | ReentrantLock, deadlock prevention |
+| **10 · Executor Framework** | [Executor Framework](https://nitinkc.github.io/java/multithreading/concurrency/07-executor-framework/) | Thread pools, ExecutorService |
+| **11 · CompletableFuture** | [CompletableFuture Mastery](https://nitinkc.github.io/java/multithreading/concurrency/08-completable-future-mastery/) | Async composition, chaining |
+| **12 · Concurrent Collections** | [Concurrent Collections](https://nitinkc.github.io/java/multithreading/concurrency/09-concurrent-collections/) | ConcurrentHashMap, BlockingQueue |
+| **13 · Virtual Threads** | [Virtual Threads](https://nitinkc.github.io/java/multithreading/concurrency/10-virtual-threads/) | Project Loom, carrier threads |
+| **14 · Structured Concurrency** | [Structured Concurrency & Scoped Values](https://nitinkc.github.io/java/multithreading/concurrency/11-structured-concurrency-scoped-values/) | StructuredTaskScope, Joiners |
+| **15 · Best Practices** | [Best Practices & Patterns](https://nitinkc.github.io/java/multithreading/concurrency/12-best-practices-patterns/) | Patterns, anti-patterns, testing |
 
 ---
 
@@ -41,15 +41,15 @@ Each lab section corresponds to theory and blog posts:
 
 | Lab | Theory Section | Blog Post | Topic |
 |:----|:---------------|:----------|:------|
-| **Lab 01** | Section 04 | [Thread Creation Methods](https://nitinkc.github.io/java/multithreading/concurrency/thread-creation-methods/) | Thread creation & lifecycle |
-| **Lab 02** | Sections 07-08 | [Race Conditions](https://nitinkc.github.io/java/multithreading/concurrency/race-conditions-critical-sections/) & [Synchronization](https://nitinkc.github.io/java/multithreading/concurrency/synchronization-mechanisms/) | Synchronization basics |
-| **Lab 03** | Section 09 | [Locks & Advanced Sync](https://nitinkc.github.io/java/multithreading/concurrency/locks-and-advanced-sync/) | Explicit locking |
-| **Lab 04** | Section 10 | [Executor Framework](https://nitinkc.github.io/java/multithreading/concurrency/executor-framework/) | Thread pools |
-| **Lab 05** | Section 11 | [CompletableFuture Mastery](https://nitinkc.github.io/java/multithreading/concurrency/completable-future-mastery/) | Async programming |
-| **Lab 06** | Section 12 | [Concurrent Collections](https://nitinkc.github.io/java/multithreading/concurrency/concurrent-collections/) | Thread-safe collections |
-| **Lab 07** | Section 13 | [Virtual Threads](https://nitinkc.github.io/java/multithreading/concurrency/virtual-threads/) | Virtual thread basics |
-| **Lab 08** | Section 14 | [Structured Concurrency](https://nitinkc.github.io/java/multithreading/concurrency/structured-concurrency-scoped-values/) | Scope management |
-| **Lab 09** | Section 15 | [Best Practices & Patterns](https://nitinkc.github.io/java/multithreading/concurrency/best-practices-patterns/) | Real-world scenarios |
+| **Lab 01** | Section 04 | [Thread Creation Methods](https://nitinkc.github.io/java/multithreading/concurrency/02-thread-creation-methods/) | Thread creation & lifecycle |
+| **Lab 02** | Sections 07-08 | [Race Conditions](https://nitinkc.github.io/java/multithreading/concurrency/04-race-conditions-critical-sections/) & [Synchronization](https://nitinkc.github.io/java/multithreading/concurrency/05-synchronization-mechanisms/) | Synchronization basics |
+| **Lab 03** | Section 09 | [Locks & Advanced Sync](https://nitinkc.github.io/java/multithreading/concurrency/06-locks-and-advanced-sync/) | Explicit locking |
+| **Lab 04** | Section 10 | [Executor Framework](https://nitinkc.github.io/java/multithreading/concurrency/07-executor-framework/) | Thread pools |
+| **Lab 05** | Section 11 | [CompletableFuture Mastery](https://nitinkc.github.io/java/multithreading/concurrency/08-completable-future-mastery/) | Async programming |
+| **Lab 06** | Section 12 | [Concurrent Collections](https://nitinkc.github.io/java/multithreading/concurrency/09-concurrent-collections/) | Thread-safe collections |
+| **Lab 07** | Section 13 | [Virtual Threads](https://nitinkc.github.io/java/multithreading/concurrency/10-virtual-threads/) | Virtual thread basics |
+| **Lab 08** | Section 14 | [Structured Concurrency](https://nitinkc.github.io/java/multithreading/concurrency/11-structured-concurrency-scoped-values/) | Scope management |
+| **Lab 09** | Section 15 | [Best Practices & Patterns](https://nitinkc.github.io/java/multithreading/concurrency/12-best-practices-patterns/) | Real-world scenarios |
 
 ---
 

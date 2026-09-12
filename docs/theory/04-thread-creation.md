@@ -356,7 +356,7 @@ System.out.println("Main finished");
 
 For more details and examples, read:
 
-- **[Thread Creation Methods](https://nitinkc.github.io/java/multithreading/concurrency/thread-creation-methods/)** — Comprehensive thread creation guide
+- **[Thread Creation Methods](https://nitinkc.github.io/java/multithreading/concurrency/02-thread-creation-methods/)** — Comprehensive thread creation guide
 
 ---
 

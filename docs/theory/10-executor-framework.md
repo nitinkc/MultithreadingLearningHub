@@ -259,7 +259,7 @@ if (cancelled) {
 
 For more details and examples, read:
 
-- **[Executor Framework](https://nitinkc.github.io/java/multithreading/concurrency/executor-framework/)** — Thread pools and ExecutorService
+- **[Executor Framework](https://nitinkc.github.io/java/multithreading/concurrency/07-executor-framework/)** — Thread pools and ExecutorService
 
 ---
 

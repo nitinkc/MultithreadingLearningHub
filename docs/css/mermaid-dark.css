@@ -1,0 +1,4 @@
+/* Dim Mermaid diagrams in dark mode so light custom node fills don't blow out */
+[data-md-color-scheme="slate"] .mermaid svg {
+  filter: brightness(0.75) contrast(1.1);
+}

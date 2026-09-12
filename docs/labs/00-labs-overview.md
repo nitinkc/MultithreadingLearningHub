@@ -215,15 +215,15 @@ These labs correspond to the comprehensive **[Java Multithreading Blog Series](h
 
 | Lab | Corresponds To | Blog Link |
 |:----|:---------------|:----------|
-| Lab 01 · Thread Creation | Section 04 | [Thread Creation Methods](https://nitinkc.github.io/java/multithreading/concurrency/thread-creation-methods/) |
-| Lab 02 · Synchronization | Sections 07-08 | [Race Conditions](https://nitinkc.github.io/java/multithreading/concurrency/race-conditions-critical-sections/) & [Synchronization](https://nitinkc.github.io/java/multithreading/concurrency/synchronization-mechanisms/) |
-| Lab 03 · Locks | Section 09 | [Locks & Advanced Sync](https://nitinkc.github.io/java/multithreading/concurrency/locks-and-advanced-sync/) |
-| Lab 04 · Executor | Section 10 | [Executor Framework](https://nitinkc.github.io/java/multithreading/concurrency/executor-framework/) |
-| Lab 05 · CompletableFuture | Section 11 | [CompletableFuture Mastery](https://nitinkc.github.io/java/multithreading/concurrency/completable-future-mastery/) |
-| Lab 06 · Concurrent Collections | Section 12 | [Concurrent Collections](https://nitinkc.github.io/java/multithreading/concurrency/concurrent-collections/) |
-| Lab 07 · Virtual Threads | Section 13 | [Virtual Threads](https://nitinkc.github.io/java/multithreading/concurrency/virtual-threads/) |
-| Lab 08 · Structured Concurrency | Section 14 | [Structured Concurrency](https://nitinkc.github.io/java/multithreading/concurrency/structured-concurrency-scoped-values/) |
-| Lab 09 · Real-World Scenarios | Sections 15 + others | [Best Practices & Patterns](https://nitinkc.github.io/java/multithreading/concurrency/best-practices-patterns/) |
+| Lab 01 · Thread Creation | Section 04 | [Thread Creation Methods](https://nitinkc.github.io/java/multithreading/concurrency/02-thread-creation-methods/) |
+| Lab 02 · Synchronization | Sections 07-08 | [Race Conditions](https://nitinkc.github.io/java/multithreading/concurrency/04-race-conditions-critical-sections/) & [Synchronization](https://nitinkc.github.io/java/multithreading/concurrency/05-synchronization-mechanisms/) |
+| Lab 03 · Locks | Section 09 | [Locks & Advanced Sync](https://nitinkc.github.io/java/multithreading/concurrency/06-locks-and-advanced-sync/) |
+| Lab 04 · Executor | Section 10 | [Executor Framework](https://nitinkc.github.io/java/multithreading/concurrency/07-executor-framework/) |
+| Lab 05 · CompletableFuture | Section 11 | [CompletableFuture Mastery](https://nitinkc.github.io/java/multithreading/concurrency/08-completable-future-mastery/) |
+| Lab 06 · Concurrent Collections | Section 12 | [Concurrent Collections](https://nitinkc.github.io/java/multithreading/concurrency/09-concurrent-collections/) |
+| Lab 07 · Virtual Threads | Section 13 | [Virtual Threads](https://nitinkc.github.io/java/multithreading/concurrency/10-virtual-threads/) |
+| Lab 08 · Structured Concurrency | Section 14 | [Structured Concurrency](https://nitinkc.github.io/java/multithreading/concurrency/11-structured-concurrency-scoped-values/) |
+| Lab 09 · Real-World Scenarios | Sections 15 + others | [Best Practices & Patterns](https://nitinkc.github.io/java/multithreading/concurrency/12-best-practices-patterns/) |
 
 ---
 

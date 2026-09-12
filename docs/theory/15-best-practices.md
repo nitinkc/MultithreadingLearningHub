@@ -314,7 +314,7 @@ public class CounterRaceTest {
 
 For more details and examples, read:
 
-- **[Best Practices & Patterns](https://nitinkc.github.io/java/multithreading/concurrency/best-practices-patterns/)** — Production-ready patterns and anti-patterns
+- **[Best Practices & Patterns](https://nitinkc.github.io/java/multithreading/concurrency/12-best-practices-patterns/)** — Production-ready patterns and anti-patterns
 
 ---
 

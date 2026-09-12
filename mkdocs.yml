@@ -1,52 +1,88 @@
 site_name: Multithreading & Concurrency
 site_description: Comprehensive learning path to master Java multithreading, concurrency, and virtual threads
 site_author: Nitin K C
+repo_url: https://github.com/nitinkc/MultithreadingLearningHub
 
 theme:
-  name: mkdocs
-  color_mode: auto
-  user_color_mode_toggle: true
-  highlightjs: true
-  hljs_languages:
-    - java
-    - yaml
-    - python
-    - javascript
-    - bash
+  name: material
+  features:
+    # Navigation
+    - navigation.tabs
+#    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes      # section landing pages (quiz/, sessions/)
+    - navigation.path
+    - navigation.top           # Back-to-top button
+    - navigation.footer        # Prev/Next page links
+    # navigation.instant disabled — breaks live reload (re-enable for production builds)
+    # - navigation.instant
+    # - navigation.instant.progress
+    # Search
+    - search.suggest
+    - search.highlight
+    - search.share
+    # Content
+    - content.code.copy
+    - content.code.annotate    # (1) style code annotations
+    - content.tabs.link        # Sync tabs across page
+    - content.tooltips
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: brown
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: brown
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 
 plugins:
-  - search
+  - search:
+      lang: en
+  # - mkdocs_quiz  # incompatible with mkdocs 1.6.1 / Python 3.14
 
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+      title: On this page
+  - abbr
   - attr_list
   - md_in_html
+  - pymdownx.snippets:
+      base_path:
+        - docs
+        - .            # lets docs pages single-source the sandbox README/RUNBOOK
+      check_paths: true
   - tables
-  - footnotes
-  - def_list
-  - abbr
-  - pymdownx.arithmatex:
-      generic: true
-
-extra_javascript:
-  - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
-  - https://unpkg.com/mermaid@10/dist/mermaid.js
-  - js/mermaid-init.js
-  - js/mathjax.js
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - js/theme-toggle.js
 
 extra_css:
-  - https://unpkg.com/mermaid@10/dist/mermaid.css
-  - css/myCss.css
+  - css/mermaid-dark.css
 
 nav:
   - Home: index.md
@@ -85,4 +121,4 @@ nav:
     - Interview Q&A: interview-prep.md
     - Self-Assessment: interview-questions.md
   - Future Additions:
-    - Go Concurrency (Roadmap): future/go-concurrency-roadmap.md
+    - Go Concurrency (Roadmap): go-concurrency-roadmap.md

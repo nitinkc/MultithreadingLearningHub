@@ -196,10 +196,7 @@ graph TD
     
     D -->|Producer-Consumer| I["BlockingQueue"]
     D -->|High throughput| J["ConcurrentLinkedQueue"]
-    
-    style E fill:#e3f2fd
-    style G fill:#e3f2fd
-    style I fill:#e3f2fd
+
 ```
 
 ---
@@ -219,7 +216,7 @@ graph TD
 
 For more details and examples, read:
 
-- **[Concurrent Collections](https://nitinkc.github.io/java/multithreading/concurrency/concurrent-collections/)** — Thread-safe data structures
+- **[Concurrent Collections](https://nitinkc.github.io/java/multithreading/concurrency/09-concurrent-collections/)** — Thread-safe data structures
 
 ---
 

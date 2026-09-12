@@ -153,9 +153,7 @@ graph LR
     OS -->|Interrupt, Allocate 10ms| T3
     T3 -->|Execute| CPU
     OS -->|Interrupt, Allocate 10ms| T1
-    
-    style OS fill:#e3f2fd
-    style CPU fill:#fff3e0
+
 ```
 
 ### Time-Slicing
@@ -303,7 +301,7 @@ try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
 
 For more details and examples, read:
 
-- **[Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/theory-and-fundamentals/)** — I/O types and preemption
+- **[Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/01-theory-and-fundamentals/)** — I/O types and preemption
 
 ---
 

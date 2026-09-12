@@ -27,10 +27,7 @@ graph LR
     T1 -->|"?"| M
     T2 -->|"?"| M
     T2 -->|"read x"| T2
-    
-    style T1 fill:#fff3e0
-    style T2 fill:#fff3e0
-    style M fill:#e8f5e9
+
 ```
 
 ### The Problem: Visibility
@@ -290,7 +287,7 @@ int r2 = x;  // Now r1 = 1, r2 = 1 guaranteed
 
 For more details and examples, read:
 
-- **[Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/theory-and-fundamentals/)** — Java Memory Model deep dive
+- **[Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/01-theory-and-fundamentals/)** — Java Memory Model deep dive
 
 ---
 

@@ -227,7 +227,7 @@ catch (StructuredTaskScope.ShutdownException e) {
 
 For more details and examples, read:
 
-- **[Structured Concurrency & Scoped Values](https://nitinkc.github.io/java/multithreading/concurrency/structured-concurrency-scoped-values/)** — Modern API for managing concurrent tasks
+- **[Structured Concurrency & Scoped Values](https://nitinkc.github.io/java/multithreading/concurrency/11-structured-concurrency-scoped-values/)** — Modern API for managing concurrent tasks
 
 ---
 

@@ -290,18 +290,18 @@ These theory modules are based on the comprehensive blog series at **[nitinkc.gi
 ### Complete Blog Post Series
 
 - **[Series Overview](https://nitinkc.github.io/java/multithreading/concurrency/series-overview/)** — Complete roadmap of all topics
-- **[Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/theory-and-fundamentals/)** — Foundations (Sections 01-02)
-- **[Thread Creation Methods](https://nitinkc.github.io/java/multithreading/concurrency/thread-creation-methods/)** — Section 04
-- **[Thread Control & Coordination](https://nitinkc.github.io/java/multithreading/concurrency/thread-control-coordination/)** — Section 05
-- **[Race Conditions & Critical Sections](https://nitinkc.github.io/java/multithreading/concurrency/race-conditions-critical-sections/)** — Section 07
-- **[Synchronization Mechanisms](https://nitinkc.github.io/java/multithreading/concurrency/synchronization-mechanisms/)** — Section 08
-- **[Locks & Advanced Sync](https://nitinkc.github.io/java/multithreading/concurrency/locks-and-advanced-sync/)** — Section 09
-- **[Executor Framework](https://nitinkc.github.io/java/multithreading/concurrency/executor-framework/)** — Section 10
-- **[CompletableFuture Mastery](https://nitinkc.github.io/java/multithreading/concurrency/completable-future-mastery/)** — Section 11
-- **[Concurrent Collections](https://nitinkc.github.io/java/multithreading/concurrency/concurrent-collections/)** — Section 12
-- **[Virtual Threads](https://nitinkc.github.io/java/multithreading/concurrency/virtual-threads/)** — Section 13
-- **[Structured Concurrency & Scoped Values](https://nitinkc.github.io/java/multithreading/concurrency/structured-concurrency-scoped-values/)** — Section 14
-- **[Best Practices & Patterns](https://nitinkc.github.io/java/multithreading/concurrency/best-practices-patterns/)** — Section 15
+- **[Theory & Fundamentals](https://nitinkc.github.io/java/multithreading/concurrency/01-theory-and-fundamentals/)** — Foundations (Sections 01-02)
+- **[Thread Creation Methods](https://nitinkc.github.io/java/multithreading/concurrency/02-thread-creation-methods/)** — Section 04
+- **[Thread Control & Coordination](https://nitinkc.github.io/java/multithreading/concurrency/03-thread-control-coordination/)** — Section 05
+- **[Race Conditions & Critical Sections](https://nitinkc.github.io/java/multithreading/concurrency/04-race-conditions-critical-sections/)** — Section 07
+- **[Synchronization Mechanisms](https://nitinkc.github.io/java/multithreading/concurrency/05-synchronization-mechanisms/)** — Section 08
+- **[Locks & Advanced Sync](https://nitinkc.github.io/java/multithreading/concurrency/06-locks-and-advanced-sync/)** — Section 09
+- **[Executor Framework](https://nitinkc.github.io/java/multithreading/concurrency/07-executor-framework/)** — Section 10
+- **[CompletableFuture Mastery](https://nitinkc.github.io/java/multithreading/concurrency/08-completable-future-mastery/)** — Section 11
+- **[Concurrent Collections](https://nitinkc.github.io/java/multithreading/concurrency/09-concurrent-collections/)** — Section 12
+- **[Virtual Threads](https://nitinkc.github.io/java/multithreading/concurrency/10-virtual-threads/)** — Section 13
+- **[Structured Concurrency & Scoped Values](https://nitinkc.github.io/java/multithreading/concurrency/11-structured-concurrency-scoped-values/)** — Section 14
+- **[Best Practices & Patterns](https://nitinkc.github.io/java/multithreading/concurrency/12-best-practices-patterns/)** — Section 15
 
 Each hub theory section links back to the corresponding blog post for additional context and detailed examples.
 

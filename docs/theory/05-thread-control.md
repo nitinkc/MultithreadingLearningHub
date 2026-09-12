@@ -360,7 +360,7 @@ for (int i = 0; i < 3; i++) {
 
 For more details and examples, read:
 
-- **[Thread Control & Coordination](https://nitinkc.github.io/java/multithreading/concurrency/thread-control-coordination/)** — Thread lifecycle methods explained
+- **[Thread Control & Coordination](https://nitinkc.github.io/java/multithreading/concurrency/03-thread-control-coordination/)** — Thread lifecycle methods explained
 
 ---
 

@@ -306,7 +306,7 @@ class BankAccount {
 
 For more details and examples, read:
 
-- **[Race Conditions & Critical Sections](https://nitinkc.github.io/java/multithreading/concurrency/race-conditions-critical-sections/)** — Understanding shared state hazards
+- **[Race Conditions & Critical Sections](https://nitinkc.github.io/java/multithreading/concurrency/04-race-conditions-critical-sections/)** — Understanding shared state hazards
 
 ---
 

@@ -1,198 +1,168 @@
 # Interview Questions: Self-Assessment
 
-Use this quiz to test your understanding of multithreading concepts. Mark your answers, then check against the Interview Q&A section.
+Use this quiz to test your understanding of multithreading concepts. Select an answer to see feedback.
 
 ---
 
 ## Level 1: Foundational (Should know after Sections 01-06)
 
-**1. What is the primary difference between a process and a thread?**
+<quiz>
+1. What is the primary difference between a process and a thread?
+- [ ] A: Threads process multiple instructions; processes can't
+- [x] B: Processes are OS-level isolation; threads share memory
+- [ ] C: Threads use more memory than processes
+- [ ] D: Processes are faster than threads
 
-- A: Threads process multiple instructions; processes can't
-- B: Processes are OS-level isolation; threads share memory
-- C: Threads use more memory than processes
-- D: Processes are faster than threads
-
-<details>
-<summary>Answer</summary>
 **B** — Processes are OS-level with isolated memory. Threads are lightweight, within a process, sharing memory.
-</details>
+</quiz>
 
-**2. Why would you use daemon threads?**
+<quiz>
+2. Why would you use daemon threads?
+- [ ] A: They run faster than non-daemon threads
+- [x] B: JVM exits immediately if only daemon threads remain
+- [ ] C: They can access shared data safely
+- [ ] D: They consume less memory
 
-- A: They run faster than non-daemon threads
-- B: JVM exits immediately if only daemon threads remain
-- C: They can access shared data safely
-- D: They consume less memory
-
-<details>
-<summary>Answer</summary>
 **B** — Daemon threads are for background work. JVM doesn't wait for them. Non-daemon threads are the default; JVM waits for them to finish.
-</details>
+</quiz>
 
-**3. What happens if you call `run()` instead of `start()` on a thread?**
+<quiz>
+3. What happens if you call `run()` instead of `start()` on a thread?
+- [ ] A: Nothing; they're equivalent
+- [ ] B: Exception is thrown
+- [x] C: Code executes in current thread, not new thread
+- [ ] D: Thread is created but not started
 
-- A: Nothing; they're equivalent
-- B: Exception is thrown
-- C: Code executes in current thread, not new thread
-- D: Thread is created but not started
-
-<details>
-<summary>Answer</summary>
 **C** — `run()` executes inline. `start()` creates a new thread. Always call `start()`.
-</details>
+</quiz>
 
-**4. Is `volatile` sufficient for thread-safe counters?**
+<quiz>
+4. Is `volatile` sufficient for thread-safe counters?
+- [ ] A: Yes, volatile guarantees atomicity
+- [x] B: No, volatile ensures visibility but not atomicity
+- [ ] C: Yes, but only for simple types
+- [ ] D: No, threads can never share counters safely
 
-- A: Yes, volatile guarantees atomicity
-- B: No, volatile ensures visibility but not atomicity
-- C: Yes, but only for simple types
-- D: No, threads can never share counters safely
-
-<details>
-<summary>Answer</summary>
 **B** — `volatile count++` is still NOT atomic. It's three operations: read, add, write. Use AtomicInteger.
-</details>
+</quiz>
 
-**5. What is a race condition?**
+<quiz>
+5. What is a race condition?
+- [ ] A: Two threads running at the same time
+- [x] B: Non-deterministic outcome from unsynchronized access
+- [ ] C: Exception thrown when threads conflict
+- [ ] D: Thread priority conflict
 
-- A: Two threads running at the same time
-- B: Non-deterministic outcome from unsynchronized access
-- C: Exception thrown when threads conflict
-- D: Thread priority conflict
-
-<details>
-<summary>Answer</summary>
 **B** — Race condition: multiple threads, shared mutable data, no synchronization, non-deterministic outcome.
-</details>
+</quiz>
 
 ---
 
 ## Level 2: Intermediate (After Sections 07-10)
 
-**6. What's the main advantage of using ConcurrentHashMap over synchronized HashMap?**
+<quiz>
+6. What's the main advantage of using ConcurrentHashMap over synchronized HashMap?
+- [ ] A: ConcurrentHashMap is faster in all cases
+- [x] B: ConcurrentHashMap uses segment-based locking (partial locking)
+- [ ] C: ConcurrentHashMap never blocks
+- [ ] D: ConcurrentHashMap uses less memory
 
-- A: ConcurrentHashMap is faster in all cases
-- B: ConcurrentHashMap uses segment-based locking (partial locking)
-- C: ConcurrentHashMap never blocks
-- D: ConcurrentHashMap uses less memory
-
-<details>
-<summary>Answer</summary>
 **B** — ConcurrentHashMap divides into segments. Multiple threads can write to different segments simultaneously. synchronizedMap locks entire map.
-</details>
+</quiz>
 
-**7. When should you use ReentrantLock instead of synchronized?**
+<quiz>
+7. When should you use ReentrantLock instead of synchronized?
+- [ ] A: Always; it's more modern
+- [x] B: When you need timeout, fairness, or multiple conditions
+- [ ] C: For better performance (always faster)
+- [ ] D: For simpler code
 
-- A: Always; it's more modern
-- B: When you need timeout, fairness, or multiple conditions
-- C: For better performance (always faster)
-- D: For simpler code
+**B** — ReentrantLock offers: `tryLock(timeout)`, fairness guarantee, multiple Condition variables. Own synchronization is simpler for basic cases.
+</quiz>
 
-<details>
-<summary>Answer</summary>
-**B** — ReentrantLock offers:  `tryLock(timeout)`, fairness guarantee, multiple Condition variables. Own synchronization is simpler for basic cases.
-</details>
+<quiz>
+8. What's the difference between `execute()` and `submit()` on ExecutorService?
+- [ ] A: No difference; they're aliases
+- [ ] B: execute() returns Future; submit() returns void
+- [x] C: submit() returns Future; execute() returns void
+- [ ] D: submit() doesn't throw exceptions
 
-**8. What's the difference between `execute()` and `submit()` on ExecutorService?**
-
-- A: No difference; they're aliases
-- B: execute() returns Future; submit() returns void
-- C: submit() returns Future; execute() returns void
-- D: submit() doesn't throw exceptions
-
-<details>
-<summary>Answer</summary>
 **C** — `execute()` returns void. `submit()` returns `Future` for result/exception handling. Why use submit() for Callables.
-</details>
+</quiz>
 
-**9. In a deadlock scenario with locks A and B, what's the fix?**
+<quiz>
+9. In a deadlock scenario with locks A and B, what's the fix?
+- [ ] A: Use nested locks only once
+- [x] B: Always acquire locks in consistent order
+- [ ] C: Use synchronized instead of locks
+- [ ] D: Increase thread priorities
 
-- A: Use nested locks only once
-- B: Always acquire locks in consistent order
-- C: Use synchronized instead of locks
-- D: Increase thread priorities
-
-<details>
-<summary>Answer</summary>
 **B** — If every thread acquires A then B (never B then A), circular wait is impossible.
-</details>
+</quiz>
 
-**10. When is `CopyOnWriteArrayList` better than `Collections.synchronizedList`?**
+<quiz>
+10. When is `CopyOnWriteArrayList` better than `Collections.synchronizedList`?
+- [ ] A: Always; it's always better
+- [x] B: When you have many readers, few writers
+- [ ] C: When you have many writers
+- [ ] D: When order doesn't matter
 
-- A: Always; it's always better
-- B: When you have many readers, few writers
-- C: When you have many writers
-- D: When order doesn't matter
-
-<details>
-<summary>Answer</summary>
 **B** — CopyOnWriteArrayList: reads are lock-free (iterate on snapshot), writes are expensive (copy array). Good for read-heavy.
-</details>
+</quiz>
 
 ---
 
 ## Level 3: Advanced (After Sections 11-15)
 
-**11. What's the difference between thenApply() and thenApplyAsync() on CompletableFuture?**
+<quiz>
+11. What's the difference between thenApply() and thenApplyAsync() on CompletableFuture?
+- [ ] A: No difference; they're aliases
+- [x] B: thenApply runs on same thread, thenApplyAsync on executor
+- [ ] C: thenApply is deprecated
+- [ ] D: thenApplyAsync always slower
 
-- A: No difference; they're aliases
-- B: thenApply runs on same thread, thenApplyAsync on executor
-- C: thenApply is deprecated
-- D: thenApplyAsync always slower
-
-<details>
-<summary>Answer</summary>
 **B** — thenApply runs on same thread that produced the value. thenApplyAsync uses ForkJoinPool (parallelism).
-</details>
+</quiz>
 
-**12. When should you use virtual threads?**
+<quiz>
+12. When should you use virtual threads?
+- [ ] A: Always; they're always better
+- [x] B: For I/O-bound workloads (blocking I/O)
+- [ ] C: For CPU-bound work
+- [ ] D: Never; they're just hype
 
-- A: Always; they're always better
-- B: For I/O-bound workloads (blocking I/O)
-- C: For CPU-bound work
-- D: Never; they're just hype
-
-<details>
-<summary>Answer</summary>
 **B** — Virtual threads: cheap JVM-managed, perfect for I/O. NOT for CPU-bound (still need parallelism from cores).
-</details>
+</quiz>
 
-**13. What are the advantages of StructuredTaskScope?**
+<quiz>
+13. What are the advantages of StructuredTaskScope?
+- [ ] A: It replaces ExecutorService completely
+- [x] B: Clear parent-child relationships, guaranteed completion before scope exits
+- [ ] C: It's always faster
+- [ ] D: Eliminates all deadlocks
 
-- A: It replaces ExecutorService completely
-- B: Clear parent-child relationships, guaranteed completion before scope exits
-- C: It's always faster
-- D: Eliminates all deadlocks
-
-<details>
-<summary>Answer</summary>
 **B** — StructuredTaskScope scopes tasks to try-with-resources. Tasks complete before scope exits. Clear resource management.
-</details>
+</quiz>
 
-**14. Why is ScopedValue preferred over ThreadLocal for virtual threads?**
+<quiz>
+14. Why is ScopedValue preferred over ThreadLocal for virtual threads?
+- [ ] A: ScopedValue is more powerful
+- [x] B: ScopedValue is automatic cleanup, works predictably with virtual threads
+- [ ] C: ThreadLocal is deprecated
+- [ ] D: ScopedValue is faster
 
-- A: ScopedValue is more powerful
-- B: ScopedValue is automatic cleanup, works predictably with virtual threads
-- C: ThreadLocal is deprecated
-- D: ScopedValue is faster
-
-<details>
-<summary>Answer</summary>
 **B** — ScopedValue: automatic cleanup, immutable, designed for virtual threads. ThreadLocal: manual cleanup, mutable, legacy.
-</details>
+</quiz>
 
-**15. What's a common anti-pattern in multi-threaded code?**
+<quiz>
+15. What's a common anti-pattern in multi-threaded code?
+- [ ] A: Using too many threads
+- [x] B: Relying on Thread.sleep() for synchronization
+- [ ] C: Creating thread pools
+- [ ] D: Using volatile flags
 
-- A: Using too many threads
-- B: Relying on Thread.sleep() for synchronization
-- C: Creating thread pools
-- D: Using volatile flags
-
-<details>
-<summary>Answer</summary>
 **B** — Using sleep() for synchronization is busy-waiting. Use CountDownLatch, Condition, or BlockingQueue instead.
-</details>
+</quiz>
 
 ---
 

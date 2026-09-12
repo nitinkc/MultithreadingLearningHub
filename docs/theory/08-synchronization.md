@@ -268,12 +268,7 @@ graph TD
     C -->|Single integer/counter| E["Use AtomicInteger"]
     C -->|Complex object| F["Use synchronized or Lock"]
     C -->|Many atomic ops| G["Use AtomicReference"]
-    
-    style B fill:#e8f5e9
-    style D fill:#fff3e0
-    style E fill:#fff3e0
-    style F fill:#e3f2fd
-    style G fill:#fff3e0
+
 ```
 
 ---
@@ -292,7 +287,7 @@ graph TD
 
 For more details and examples, read:
 
-- **[Synchronization Mechanisms](https://nitinkc.github.io/java/multithreading/concurrency/synchronization-mechanisms/)** — synchronized, volatile, and atomic operations
+- **[Synchronization Mechanisms](https://nitinkc.github.io/java/multithreading/concurrency/05-synchronization-mechanisms/)** — synchronized, volatile, and atomic operations
 
 ---
 

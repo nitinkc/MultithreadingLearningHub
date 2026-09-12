@@ -371,7 +371,7 @@ class Account {
 
 For more details and examples, read:
 
-- **[Locks & Advanced Sync](https://nitinkc.github.io/java/multithreading/concurrency/locks-and-advanced-sync/)** — ReentrantLock, ReadWriteLock, deadlock prevention
+- **[Locks & Advanced Sync](https://nitinkc.github.io/java/multithreading/concurrency/06-locks-and-advanced-sync/)** — ReentrantLock, ReadWriteLock, deadlock prevention
 
 ---
 
