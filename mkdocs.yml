@@ -46,7 +46,7 @@ theme:
 plugins:
   - search:
       lang: en
-  # - mkdocs_quiz  # incompatible with mkdocs 1.6.1 / Python 3.14
+  - mkdocs_quiz
 
 markdown_extensions:
   - admonition
@@ -81,9 +81,6 @@ markdown_extensions:
       check_paths: true
   - tables
 
-extra_css:
-  - css/mermaid-dark.css
-
 nav:
   - Home: index.md
   - Foundations:
@@ -117,8 +114,9 @@ nav:
     - Lab 7 · Virtual Threads Basics: labs/07-virtual-threads-lab.md
     - Lab 8 · Structured Concurrency: labs/08-structured-concurrency-lab.md
     - Lab 9 · Real-World Scenarios: labs/09-real-world-lab.md
-  - Interview Prep:
+  - Interview & Quizzes:
     - Interview Q&A: interview-prep.md
     - Self-Assessment: interview-questions.md
+    - Mastery Quiz by Section: mastery-quiz.md
   - Future Additions:
     - Go Concurrency (Roadmap): go-concurrency-roadmap.md
