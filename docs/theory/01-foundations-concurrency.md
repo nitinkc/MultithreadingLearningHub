@@ -56,9 +56,9 @@ Core 2 (Thread 2) |████████████| → Task 2
 graph LR
     A["Single Core<br/>with Time-Slicing"] -->|Interleaved Execution| B["CONCURRENCY"]
     C["Multiple Cores<br/>Simultaneous"] -->|True Simultaneous| D["PARALLELISM"]
-
-    style B fill:#e3f2fd,color:#000,stroke:#333
-    style D fill:#fff3e0,color:#000,stroke:#333
+    
+    style B fill:#e3f2fd
+    style D fill:#fff3e0
 ```
 
 ### Which One Do You Need?
@@ -131,12 +131,12 @@ graph TB
         T2 -->|Access| Heap
         T3 -->|Access| Heap
     end
-    style Process fill:#f5f5f5,color:#000,stroke:#333
-    style Heap fill:#e8f5e9,color:#000,stroke:#333
-    style T1 fill:#fff3e0,color:#000,stroke:#333
-    style T2 fill:#fff3e0,color:#000,stroke:#333
-    style T3 fill:#fff3e0,color:#000,stroke:#333
-
+    
+    style Process fill:#f5f5f5
+    style Heap fill:#e8f5e9
+    style T1 fill:#fff3e0
+    style T2 fill:#fff3e0
+    style T3 fill:#fff3e0
 ```
 
 ### Memory Layout
